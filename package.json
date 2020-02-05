@@ -1,0 +1,24 @@
+{
+  "name": "runtime-type-validation-generator",
+  "version": "0.1.0",
+  "description": "Generator of validation script of type defined in Flow of TypeScript",
+  "main": "src/index.js",
+  "bin": {
+    "runtime-type-validation-generator": "./src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "node ./src/index.js ./example/typesDefinitionFile.js ./example/validationsFile.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-plugin-tcomb": "^0.4.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0"
+  },
+  "peerDependencies": {
+    "tcomb": "^3.2.29"
+  }
+}
