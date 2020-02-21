@@ -2,7 +2,7 @@
 
 Generator of validation script of type defined in Flow or TypeScript.
 
-This tool replace [JSON schema](https://json-schema.org/) or [io-ts](https://gcanti.github.io/io-ts/) in the most user friendly way when you use static typed JavaScript.
+This tool replace [JSON schema](https://json-schema.org/) or [io-ts](https://gcanti.github.io/io-ts/) in user friendly way when you use static typed JavaScript.
 You can use just your type definition in Flow or Typescript and generate validation functions.
 
 Ideal for API validation using JSON or CSV.
