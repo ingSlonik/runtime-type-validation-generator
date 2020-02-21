@@ -4,7 +4,7 @@
   "description": "Generator of validation script of type defined in Flow of TypeScript",
   "main": "src/index.js",
   "bin": {
-    "runtime-type-validation-generator": "./src/index.js"
+    "rtvg": "./src/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -25,7 +25,13 @@ npm install --save tcomb
 ## CLI
 
 ```bash
-runtime-type-validation-generator ./typesDefinitionFile.js ./validationsFile.js
+rtvg ./typesDefinitionFile.js ./validationsFile.js
+```
+
+or
+
+```bash
+npx rtvg ./typesDefinitionFile.js ./validationsFile.js
 ```
 
 ## Example
