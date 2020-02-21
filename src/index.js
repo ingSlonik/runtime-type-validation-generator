@@ -18,11 +18,13 @@ const inputFile = readFileSync(inputFileName, "utf8");
 const inputFileTransformed = transform(inputFile, { plugins: [ "syntax-flow" ] });
 const exportedTypes = getExportedTypes(inputFileTransformed.ast);
 
-const typedOutputFile = `${inputFile}
+const typedOutputFile = `/* eslint-disable */
+${inputFile}
 ${exportedTypes.map(type => `
 export function validate${type}(data): ${type} {
     return data;
-}`).join("\n")}`;
+}`).join("\n")}
+`;
 
 const outputFileTransformed = transform(typedOutputFile, {
     plugins: [
@@ -36,9 +38,10 @@ writeFileSync(outputFileName, outputFileTransformed.code);
 console.log(`Write output file to "${outputFileName}".`);
 
 const typeDefinitionOfValidationsFile = `${inputFile}
-${exportedTypes.map(type => `declare export function validate${type}(data: mixed): ${type};`).join("\n")}`;
+${exportedTypes.map(type => `declare export function validate${type}(data: mixed): ${type};`).join("\n")}
+`;
 
-const flowTypeDefinitionFileName = outputFileName.replace(".js", ".flow.js");
+const flowTypeDefinitionFileName = `${outputFileName}.flow`;
 
 writeFileSync(flowTypeDefinitionFileName, typeDefinitionOfValidationsFile);
-console.log(`Write type definition to "${outputFileName}".`);
+console.log(`Write type definition to "${flowTypeDefinitionFileName}".`);
