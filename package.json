@@ -1,6 +1,6 @@
 {
   "name": "runtime-type-validation-generator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generator of validation script of type defined in Flow of TypeScript",
   "main": "src/index.js",
   "bin": {
