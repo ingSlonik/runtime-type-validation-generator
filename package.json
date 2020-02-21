@@ -27,9 +27,6 @@
         "url": "https://github.com/ingSlonik/runtime-type-validation-generator/issues"
     },
     "license": "MIT",
-    "publishConfig": {
-        "registry": "https://registry.npmjs.org/"
-    },
     "dependencies": {
         "babel-core": "^6.26.3",
         "babel-plugin-syntax-flow": "^6.18.0",
