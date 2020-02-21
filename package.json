@@ -1,24 +1,42 @@
 {
-  "name": "runtime-type-validation-generator",
-  "version": "0.1.1",
-  "description": "Generator of validation script of type defined in Flow of TypeScript",
-  "main": "src/index.js",
-  "bin": {
-    "rtvg": "./src/index.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "example": "node ./src/index.js ./example/typesDefinitionFile.js ./example/validationsFile.js"
-  },
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "babel-core": "^6.26.3",
-    "babel-plugin-syntax-flow": "^6.18.0",
-    "babel-plugin-tcomb": "^0.4.0",
-    "babel-plugin-transform-flow-strip-types": "^6.22.0"
-  },
-  "peerDependencies": {
-    "tcomb": "^3.2.29"
-  }
+    "name": "runtime-type-validation-generator",
+    "version": "0.1.1",
+    "description": "Generator of validation script of type defined in Flow of TypeScript",
+    "main": "src/index.js",
+    "bin": {
+        "rtvg": "./src/index.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "example": "node ./src/index.js ./example/typesDefinitionFile.js ./example/validationsFile.js"
+    },
+    "keywords": [
+        "API",
+        "validation",
+        "generator",
+        "runtime",
+        "TypeScript",
+        "FlowType"
+    ],
+    "author": "Filip Paulů <ing.fenix@seznam.cz>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ingSlonik/runtime-type-validation-generator.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ingSlonik/runtime-type-validation-generator/issues"
+    },
+    "license": "MIT",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    },
+    "dependencies": {
+        "babel-core": "^6.26.3",
+        "babel-plugin-syntax-flow": "^6.18.0",
+        "babel-plugin-tcomb": "^0.4.0",
+        "babel-plugin-transform-flow-strip-types": "^6.22.0"
+    },
+    "peerDependencies": {
+        "tcomb": "^3.2.29"
+    }
 }
