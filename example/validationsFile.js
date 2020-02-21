@@ -1,4 +1,5 @@
 import _t from "tcomb";
+/* eslint-disable */
 export const Data = _t.interface({
     id: _t.String,
     order: _t.Number,
